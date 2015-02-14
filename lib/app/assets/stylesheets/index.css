@@ -1,0 +1,120 @@
+.cashier-deposite-wrapper a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cashier-deposite-wrapper {
+  padding: 40px;
+  width: 804px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  background: white;
+}
+
+.cashier-deposite-title{
+  position: absolute;
+  color: #790003;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 0px 15px 0px 15px;
+  background: #FFF;
+  height: 35px;
+  left: 40%;
+  top: -25px;
+}
+
+.cashier-deposit-desription {
+  padding: 0 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font: normal 14px/20px Arial, Helvetica, sans-serif;
+}
+
+.cashier-equivalent {
+  padding-left: 10px;
+  font: normal 14px/20px Arial, Helvetica, sans-serif;
+  margin-top: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cashier-bank-notice {
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+
+
+
+.cashier-logos-wrapper{
+  padding-left: 20px;
+  width: 700px;
+  margin: auto;
+  margin-bottom: 8px;
+}
+.cashier-payment-logo {
+  padding-right: 15px;
+}
+
+
+.cashier-payment-details {
+  background: white;
+}
+
+
+.cashier-payment-support {
+  margin-top: 14px;
+  text-align: center;
+  font: normal 14px/20px Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+.cashier-payment-bank-logo {
+  margin-left: 40px;
+}
+
+.cashier-payment-contact-msg {
+  text-align: center;
+  font: normal 14px/20px Arial, Helvetica, sans-serif;
+  color: #444;
+  margin-top: 30px;
+}
+
+
+.cashier-payment-contact-wrapper {
+  width: 420px;
+  margin:auto;
+}
+
+span {
+  font: normal 14px/20px Arial, Helvetica, sans-serif;
+  color: #444;
+}
+
+
+
+
+
+
+/*object*/
+
+.hidden {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.set-to-middle {
+  top: -15px;
+}
