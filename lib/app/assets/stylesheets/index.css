@@ -1,9 +1,9 @@
-.cashier-deposite-wrapper a {
+.cashier-deposite-container a {
   text-decoration: none;
   display: inline-block;
 }
 
-.cashier-deposite-wrapper {
+.cashier-deposite-container {
   padding: 40px;
   width: 804px;
   border: 1px solid black;
@@ -11,6 +11,7 @@
   position: relative;
   background: white;
 }
+
 
 .cashier-deposite-title{
   position: absolute;
@@ -47,22 +48,26 @@
 }
 
 
-
-
-
 .cashier-logos-wrapper{
   padding-left: 20px;
   width: 700px;
   margin: auto;
-  margin-bottom: 8px;
 }
+
+
+
+/*======================*/
+/*Deposite Payment Block*/
+/*======================*/
 .cashier-payment-logo {
   padding-right: 15px;
 }
 
-
 .cashier-payment-details {
   background: white;
+  width: 720px;
+  margin: auto;
+  display: block;
 }
 
 
@@ -76,6 +81,7 @@
 
 .cashier-payment-bank-logo {
   margin-left: 40px;
+  display: block;
 }
 
 .cashier-payment-contact-msg {
@@ -87,18 +93,96 @@
 
 
 .cashier-payment-contact-wrapper {
-  width: 420px;
+  width: 440px;
   margin:auto;
 }
 
-span {
+.cashier-payment-item{
+  display: inline-block;
+  padding: 0 7px;
+}
+
+.cashier-payment-contact-wrapper span {
+  top: -8px;
+  position: relative;
   font: normal 14px/20px Arial, Helvetica, sans-serif;
   color: #444;
 }
 
+.logo-email {
+  bottom: -10px;
+  position: relative;
+}
 
 
+/*====================*/
+/*Skrill Payment Block*/
+/*====================*/
+.cashier-payment-form{
+  margin-top: 20px;
+}
 
+.form-controller {
+  margin: 10px 0;
+  position: relative;
+}
+
+.form-text {
+  color: #232323;
+  font-family: lato;
+  font-size: 13px;
+  margin-right: 25px;
+  padding-top: 8px;
+  text-align: right;
+  width: 180px;
+  display: inline-block;
+
+}
+
+.form-input {
+  background-color: #666666;
+  background-image: url("../images/form/textfield-back.jpg");
+  background-repeat: repeat-x;
+  border: 1px solid #666666;
+  color: #232323;
+  height: 25px;
+  padding-left: 5px;
+  width: 200px;
+}
+
+.form-btn-submit {
+  background: url("../images/form/submit-button.png");
+  width: 140px;
+  height: 68px;
+  border: none;
+  cursor: pointer;
+  margin-left: 205px;
+}
+
+.form-icon-validation {
+  width: 20px;
+  position: absolute;
+  left: 390px;
+  bottom: 4px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+
+.form-text-validation {
+  position: absolute;
+  right: 175px;
+  top: 0;
+  font-size: 10px;
+  color: red;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
 
 
 /*object*/
@@ -115,6 +199,10 @@ span {
   position: relative;
 }
 
-.set-to-middle {
+.middle {
   top: -15px;
+}
+
+.absolute {
+  position: absolute;
 }

@@ -10,7 +10,7 @@
 
   <body>
     <div class="container">
-      <div class="cashier-deposite-wrapper">
+      <div class="cashier-deposite-container">
         <h1 class="cashier-deposite-title">DEPOSITE</h1>
         <p class="cashier-deposit-desription">
           We are pleased to offer you our deposit and withdrawal methods for our casinos ensuring you can enjoy our games with the payment method that you are comfortable with our selected deposit and withdrawal options are 100% safe and secure ensuring that your information is safe at all times. If you would like any information on the security precautions we take then please email us at cs@clubvegas999.com. 
@@ -21,32 +21,145 @@
         </h3>
 
         <div class="cashier-logos-wrapper">
-          <a class="cashier-payment-logo js-toggle" href="#">
-            <img src="app/assets/images/payment-types/bank-deposit-en.png">
+          <a class="cashier-payment-logo js-toggle-deposite" href="#">
+            <img class="js-deposite" src="app/assets/images/payment-types/bank-deposit-en.png">
           </a>
-          <div class="cashier-payment-details hidden js-toogle-is-show">
-            <h5 class="cashier-payment-support">Supported Banks</h5>
-            <img class="cashier-payment-bank-logo inline-block  relative set-to-middle" src="app/assets/images/bank-logos/krungthai-bank.png">
-            <img class="cashier-payment-bank-logo inline-block " src="app/assets/images/bank-logos/bcel-bank.png">
-            <img class="cashier-payment-bank-logo inline-block  relative set-to-middle" src="app/assets/images/bank-logos/kasikornbank.png">
-            <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
-            <div class="cashier-payment-contact-wrapper">
-              <img class="cashier-payment-contact-logo" src="app/assets/images/contact-logos/live-chat-btn-en.png">
-              <span> OR </span>
-              <img class="cashier-payment-contact-logo" src="app/assets/images/contact-logos/cs-mail-icons.png">
-              <span> CS@ClubVegas999.com </span>
+
+          <a class="cashier-payment-logo js-toggle-skrill" href="#">
+            <img  class="js-skrill" src="app/assets/images/payment-types/skrill-logo-payment.png">
+          </a>
+
+          <a class="cashier-payment-logo js-toggle-neteller" href="#">
+            <img  class="js-neteller" src="app/assets/images/payment-types/neteller-logo-payment.png">
+          </a>
+        </div>
+
+        <!-- DEPOSITE -->
+        <div class="cashier-payment-details hidden js-toogle-deposite-show aboslute">
+          <h5 class="cashier-payment-support">Supported Banks</h5>
+          <img class="cashier-payment-bank-logo inline-block  relative middle" src="app/assets/images/bank-logos/krungthai-bank.png">
+          <img class="cashier-payment-bank-logo inline-block " src="app/assets/images/bank-logos/bcel-bank.png">
+          <img class="cashier-payment-bank-logo inline-block  relative middle" src="app/assets/images/bank-logos/kasikornbank.png">
+          <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
+          <div class="cashier-payment-contact-wrapper">
+            <div class="cashier-payment-item">
+              <a class="cashier-payment-contact-logo" href="#">
+                <img src="app/assets/images/contact-logos/live-chat-btn-en.png">
+              </a>
             </div>
+            <div class="cashier-payment-item">
+              <span> OR </span>
+            </div>
+            <div class="cashier-payment-item">
+              <img class="logo-email" src="app/assets/images/contact-logos/cs-mail-icons.png">
+            </div>
+            <div class="cashier-payment-item">
+              <a class="cashier-payment-contact-logo" href="mailto: CS@ClubVegas999.com">
+                <span> CS@ClubVegas999.com </span>
+              </a>  
+            </div>   
           </div>
+        </div>
 
-<!--           <a class="cashier-payment-logo js-toggle-dropdown" href="#">
-            <img src="app/assets/images/payment-types/skrill-logo-payment-2.png">
-          </a>
+        <!-- SKRILL -->
+        <div class="cashier-payment-details hidden js-toogle-skrill-show aboslute">
+          <form class="cashier-payment-form" method="POST">
+            <div class="form-controller">
+              <label class="form-text">Skrill(MoneyBooker) Email:</label>
+              <input class="form-input" id="js-deposite-skrill-email" type="email" name="depositeSkrillEmail">
 
-          <a class="cashier-payment-logo js-toggle-dropdown" href="#">
-            <img src="app/assets/images/payment-types/neteller-logo-payment-2.png">
-          </a> -->
+              <!-- validation js -->
+              <p class="form-text-validation hidden js-text-valiation"> Email address is invalid! </p> 
+              <img class="form-icon-validation hidden js-icon-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
 
+            </div>
+            <div class="form-controller">
+              <label class="form-text">Currency:</label>
+              <select name="depositeSkrillCurrency" class="form-input">
+                <option value="USD">USD</option>
+                <option value="SGD">SGD</option>
+                <option value="MYR">MYR</option>
+                <option value="THB">THB</option>
+                <option value="HKD">HKD</option>
+                <option value="TWD">TWD</option>
+                <option value="EUR">EUR</option>
+                <option value="KRW">KRW</option> 
+              </select>
+            </div>
+            <div class="form-controller">
+              <label class="form-text">Deposit Amount:</label>
+              <input class="form-input" type="text" name="depositeSkrillAmount"> *
+            </div>
+            <div class="form-controller">
+              <input class="form-btn-submit" id="js-deposite-skrill-submit" type="submit" value=" " name="depositeSkrillSubmit">
+            </div>
+          </form>
+          <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
+          <div class="cashier-payment-contact-wrapper">
+            <div class="cashier-payment-item">
+              <a class="cashier-payment-contact-logo" href="#">
+                <img src="app/assets/images/contact-logos/live-chat-btn-en.png">
+              </a>
+            </div>
+            <div class="cashier-payment-item">
+              <span> OR </span>
+            </div>
+            <div class="cashier-payment-item">
+              <img class="logo-email" src="app/assets/images/contact-logos/cs-mail-icons.png">
+            </div>
+            <div class="cashier-payment-item">
+              <a class="cashier-payment-contact-logo" href="mailto: CS@ClubVegas999.com">
+                <span> CS@ClubVegas999.com </span>
+              </a>  
+            </div>   
+          </div>
+        </div>
 
+        <!-- NETELLER -->
+        <div class="cashier-payment-details hidden js-toogle-neteller-show aboslute">
+          <form class="cashier-payment-form">
+            <div class="form-controller">
+              <label class="form-text">Account ID:</label>
+              <input class="form-input" type="email" name="depositeNetelleraAccountId"> *
+            </div>
+            <div class="form-controller">
+              <label class="form-text">Secure ID</label>
+              <input class="form-input" type="email" name="depositeNetellerSecureId"> *
+            </div>
+            <div class="form-controller">
+              <label class="form-text">Currency:</label>
+              <select name="depositeNetellerCurrency" class="form-input">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+              </select>
+            </div>
+            <div class="form-controller">
+              <label class="form-text">Deposit Amount:</label>
+              <input class="form-input" type="text" name="depositeNetellerAmount"> *
+            </div>
+            <div class="form-controller">
+              <input class="form-btn-submit" type="submit" value=" " name="depositeNetellerSubmit">
+            </div>
+          </form>
+          <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
+          <div class="cashier-payment-contact-wrapper">
+            <div class="cashier-payment-item">
+              <a class="cashier-payment-contact-logo" href="#">
+                <img src="app/assets/images/contact-logos/live-chat-btn-en.png">
+              </a>
+            </div>
+            <div class="cashier-payment-item">
+              <span> OR </span>
+            </div>
+            <div class="cashier-payment-item">
+              <img class="logo-email" src="app/assets/images/contact-logos/cs-mail-icons.png">
+            </div>
+            <div class="cashier-payment-item">
+              <a class="cashier-payment-contact-logo" href="mailto: CS@ClubVegas999.com">
+                <span> CS@ClubVegas999.com </span>
+              </a>  
+            </div>   
+          </div>
         </div>
       </div>
     </div>
