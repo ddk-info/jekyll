@@ -159,29 +159,20 @@
   margin-left: 205px;
 }
 
-.form-icon-validation {
+.icon-validation {
   width: 20px;
   position: absolute;
   left: 390px;
   bottom: 4px;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-
 }
 
-.form-text-validation {
+.text-validation {
   position: absolute;
-  right: 175px;
-  top: 0;
+  left: 435px;
+  top: -2px;
   font-size: 10px;
   color: red;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-
+  text-align: left;
 }
 
 

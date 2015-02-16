@@ -5,6 +5,7 @@
     <title>Title of the document</title>
     <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/application.css">
     <script src="vendor/javascripts/jquery.min.js"></script>
+    <script src="vendor/javascripts/numric.min.js"></script>
     <script src="app/assets/javascripts/application.js"></script>
   </head>
 
@@ -66,11 +67,11 @@
           <form class="cashier-payment-form" method="POST">
             <div class="form-controller">
               <label class="form-text">Skrill(MoneyBooker) Email:</label>
-              <input class="form-input" id="js-deposite-skrill-email" type="email" name="depositeSkrillEmail">
+              <input class="form-input" id="js-deposite-skrill-email" type="email" name="depositeSkrillEmail"> *
 
               <!-- validation js -->
-              <p class="form-text-validation hidden js-text-valiation"> Email address is invalid! </p> 
-              <img class="form-icon-validation hidden js-icon-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+              <p class="text-validation hidden js-text-email-valiation"> Email can't be blank! </p> 
+              <img class="icon-validation hidden js-icon-email-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
 
             </div>
             <div class="form-controller">
@@ -86,9 +87,15 @@
                 <option value="KRW">KRW</option> 
               </select>
             </div>
+
             <div class="form-controller">
               <label class="form-text">Deposit Amount:</label>
-              <input class="form-input" type="text" name="depositeSkrillAmount"> *
+              <!-- #TODO -->  
+              <input class="form-input" id="js-deposite-skrill-amount" type="text" name="depositeSkrillAmount"> *
+              <!-- validation js -->
+
+              <p class="text-validation hidden js-text-amount-valiation"> Amount can't be blank!</p> 
+              <img class="icon-validation hidden js-icon-amount-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
             </div>
             <div class="form-controller">
               <input class="form-btn-submit" id="js-deposite-skrill-submit" type="submit" value=" " name="depositeSkrillSubmit">
@@ -135,7 +142,8 @@
             </div>
             <div class="form-controller">
               <label class="form-text">Deposit Amount:</label>
-              <input class="form-input" type="text" name="depositeNetellerAmount"> *
+              <input class="form-input"  type="number" name="depositeNetellerAmount"> *
+
             </div>
             <div class="form-controller">
               <input class="form-btn-submit" type="submit" value=" " name="depositeNetellerSubmit">
