@@ -1,2 +1,5 @@
-@import "index.css";
 @import "shared/layout.css";
+@import "shared/base.css";
+@import "bank-deposite.css";
+@import "bank-withdraw.css";
+@import "shared/objects.css";

@@ -1,0 +1,23 @@
+.hidden {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.middle {
+  top: -15px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.full-width {
+  width: 100% !important;
+}

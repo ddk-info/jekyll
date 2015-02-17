@@ -1,0 +1,15 @@
+.cashier-deposite-container a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cashier-deposite-container {
+  padding: 15px 40px;
+  width: 800px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  background: white;
+  margin-bottom: 65px;
+}
+

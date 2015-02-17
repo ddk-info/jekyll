@@ -62,6 +62,8 @@
           </div>
         </div>
 
+
+
         <!-- SKRILL -->
         <div class="cashier-payment-details hidden js-toogle-skrill-show aboslute">
           <form class="cashier-payment-form" method="POST">
@@ -90,10 +92,8 @@
 
             <div class="form-controller">
               <label class="form-text">Deposit Amount:</label>
-              <!-- #TODO -->  
-              <input class="form-input" id="js-deposite-skrill-amount" type="text" name="depositeSkrillAmount"> *
-              <!-- validation js -->
 
+              <input class="form-input" id="js-deposite-skrill-amount" type="text" name="depositeSkrillAmount"> *
               <p class="text-validation hidden js-text-amount-valiation"> Amount can't be blank!</p> 
               <img class="icon-validation hidden js-icon-amount-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
             </div>
@@ -121,17 +121,30 @@
             </div>   
           </div>
         </div>
+        <!-- SKRILL -->
+
+
+
+
 
         <!-- NETELLER -->
         <div class="cashier-payment-details hidden js-toogle-neteller-show aboslute">
           <form class="cashier-payment-form">
             <div class="form-controller">
               <label class="form-text">Account ID:</label>
-              <input class="form-input" type="email" name="depositeNetelleraAccountId"> *
+              <input class="form-input" id="js-neteller-account-id-validation" maxlength="14" type="text" name="depositeNetelleraAccountId"> *
+
+              <!-- validation js -->
+              <p class="text-validation hidden js-text-acount-id-valiation"> Account ID is required!</p> 
+              <img class="icon-validation hidden js-icon-acount-id-valiation" title="Email address is invalid!" src="app/assets/images/form/warning.png">
             </div>
             <div class="form-controller">
               <label class="form-text">Secure ID</label>
-              <input class="form-input" type="email" name="depositeNetellerSecureId"> *
+              <input class="form-input" id="js-neteller-secure-id-validation" type="email" name="depositeNetellerSecureId"> *
+
+              <!-- validation js -->
+              <p class="text-validation hidden js-text-secure-id-valiation"> Secure ID is required! </p> 
+              <img class="icon-validation hidden js-icon-secure-id-valiation" title="Email address is invalid!" src="app/assets/images/form/warning.png">
             </div>
             <div class="form-controller">
               <label class="form-text">Currency:</label>
@@ -142,11 +155,14 @@
             </div>
             <div class="form-controller">
               <label class="form-text">Deposit Amount:</label>
-              <input class="form-input"  type="number" name="depositeNetellerAmount"> *
-
+              <input class="form-input" id="js-neteller-deposite-amount-validation" type="text" name="depositeNetellerAmount"> *
+              
+              <!-- validation js -->
+              <p class="text-validation hidden js-text-deposite-amount-valiation"> Deposite amount is required! </p> 
+              <img class="icon-validation hidden js-icon-deposite-amount-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
             </div>
             <div class="form-controller">
-              <input class="form-btn-submit" type="submit" value=" " name="depositeNetellerSubmit">
+              <input class="form-btn-submit" id="js-neteller-submit-button" type="submit" value=" " name="depositeNetellerSubmit">
             </div>
           </form>
           <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
@@ -169,6 +185,247 @@
             </div>   
           </div>
         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="cashier-deposite-container">
+        <h1 class="cashier-deposite-title">WITHDRAW</h1>
+        <h3 class="cashier-bank-notice">
+          Please choose a payment processor that you want to use by clicking the logo below:
+        </h3>
+
+        <div class="cashier-logos-wrapper">
+          <a class="cashier-payment-logo js-bank-withdrawal-image" href="#">
+            <img class="js-bank-withdrawal" src="app/assets/images/withdrawal-logos/bank-withdraw-logo-en.png">
+          </a>
+
+          <a class="cashier-payment-logo js-skrill-withdrawal-image" href="#">
+            <img  class="js-skrill-withdrawal" src="app/assets/images/withdrawal-logos/skrill-logo-payment.png">
+          </a>
+
+          <a class="cashier-payment-logo js-neteller-withdrawal-image" href="#">
+            <img  class="js-neteller-withdrawal" src="app/assets/images/withdrawal-logos/neteller-logo-payment.png">
+          </a>
+        </div>
+
+        <!-- outer bank Withdrawal -->
+        <div class="outer-control js-outer-controller-bank-withdrawal ">
+          
+          <!-- Bank Widthdrawal -->
+          <div class="cashier-payment-details hidden js-bank-withdrawal-show-container aboslute inner-control full-width">
+            <form class="cashier-payment-form">
+              <div class="column-5 grid">
+                <div class="form-controller">
+                  <label class="form-text">Bank Account Number:</label>
+                  <input class="form-input" id="js-neteller-account-id-validation" max-length= "14" type="text" name="depositeNetelleraAccountId"> 
+
+                  <!-- validation js -->
+                  <p class="text-validation hidden js-text-acount-id-valiation"> Account ID can't be blank! </p> 
+                  <img class="icon-validation hidden js-icon-acount-id-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+                </div>
+                <div class="form-controller">
+                  <label class="form-text">Bank Account Name:</label>
+                  <input class="form-input" id="js-neteller-secure-id-validation" type="email" name="depositeNetellerSecureId"> 
+
+                  <!-- validation js -->
+                  <p class="text-validation hidden js-text-secure-id-valiation"> Secure ID can't be blank! </p> 
+                  <img class="icon-validation hidden js-icon-secure-id-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+                </div>
+                <div class="form-controller">
+                  <label class="form-text">Withdraw Amount:</label>
+                  <input class="form-input" id="js-neteller-deposite-amount-validation" type="number" name="depositeNetellerAmount"> *
+                  
+                  <!-- validation js -->
+                  <p class="text-validation hidden js-text-email-valiation"> Deposite amount can't be blank! </p> 
+                  <img class="icon-validation hidden js-icon-email-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+                </div>
+                <div class="form-controller">
+                  <input class="form-btn-submit" id="js-neteller-submit-button" type="submit" value=" " name="depositeNetellerSubmit">
+                </div>
+              </div>
+              <div class="column-5 grid">
+                <div class="form-controller">
+                  <label class="form-text">Bank Name:</label>
+                  <input class="form-input" id="js-neteller-account-id-validation" max-length= "14" type="text" name="depositeNetelleraAccountId"> 
+                  <!-- validation js -->
+                  <p class="text-validation hidden js-text-acount-id-valiation"> Account ID can't be blank! </p> 
+                  <img class="icon-validation hidden js-icon-acount-id-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+                </div>
+                <div class="form-controller">
+                  <label class="form-text">Bank Branch:</label>
+                  <input class="form-input" id="js-neteller-secure-id-validation" type="email" name="depositeNetellerSecureId"> 
+
+                  <!-- validation js -->
+                  <p class="text-validation hidden js-text-secure-id-valiation"> Secure ID can't be blank! </p> 
+                  <img class="icon-validation hidden js-icon-secure-id-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+                </div>
+              </div>
+              <div class="clear-fix"></div>
+            </form>
+            <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
+            <div class="cashier-payment-contact-wrapper">
+              <div class="cashier-payment-item">
+                <a class="cashier-payment-contact-logo" href="#">
+                  <img src="app/assets/images/contact-logos/live-chat-btn-en.png">
+                </a>
+              </div>
+
+              <div class="cashier-payment-item">
+                <span> OR </span>
+              </div>
+              <div class="cashier-payment-item">
+                <img class="logo-email" src="app/assets/images/contact-logos/cs-mail-icons.png">
+              </div>
+              <div class="cashier-payment-item">
+                <a class="cashier-payment-contact-logo" href="mailto: CS@ClubVegas999.com">
+                  <span> CS@ClubVegas999.com </span>
+                </a>  
+              </div>   
+            </div>
+          </div>
+          <!-- Bank Withdrawal -->
+
+        </div>
+        <!-- outer bank Withdrawal -->
+
+
+        <!-- outer skrill widrawal -->
+        <div class="outer-control js-outer-controller-skrill-withdrawal ">
+
+          <!-- SKRILL  Withdrawal-->
+          <div class="cashier-payment-details hidden js-skrill-winthdrawal-show-container aboslute inner-control full-width">
+            <form class="cashier-payment-form" method="POST">
+              <div class="form-controller">
+                <label class="form-text">Skrill(MoneyBooker) Email:</label>
+                <input class="form-input" id="js-deposite-skrill-email" type="email" name="depositeSkrillEmail"> *
+                <!-- validation js -->
+                <p class="text-validation hidden js-text-email-valiation"> Email can't be blank! </p> 
+                <img class="icon-validation hidden js-icon-email-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+
+              </div>
+
+              <div class="form-controller">
+                <label class="form-text">Deposit Amount:</label>
+
+                <input class="form-input" id="js-deposite-skrill-amount" type="text" name="depositeSkrillAmount"> *
+                <p class="text-validation hidden js-text-amount-valiation"> Amount can't be blank!</p> 
+                <img class="icon-validation hidden js-icon-amount-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+              </div>
+              <div class="form-controller">
+                <input class="form-btn-submit" id="js-deposite-skrill-submit" type="submit" value=" " name="depositeSkrillSubmit">
+              </div>
+            </form>
+            <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
+            <div class="cashier-payment-contact-wrapper">
+              <div class="cashier-payment-item">
+                <a class="cashier-payment-contact-logo" href="#">
+                  <img src="app/assets/images/contact-logos/live-chat-btn-en.png">
+                </a>
+              </div>
+              <div class="cashier-payment-item">
+                <span> OR </span>
+              </div>
+              <div class="cashier-payment-item">
+                <img class="logo-email" src="app/assets/images/contact-logos/cs-mail-icons.png">
+              </div>
+              <div class="cashier-payment-item">
+                <a class="cashier-payment-contact-logo" href="mailto: CS@ClubVegas999.com">
+                  <span> CS@ClubVegas999.com </span>
+                </a>  
+              </div>   
+            </div>
+          </div>
+          <!-- SKRILL Withdrawal -->
+
+        </div>
+        <!-- outer skrill widrawal -->
+
+
+        <!-- out neteller withdrawal -->
+        <div class="outer-control js-outer-controller-neteller-withdrawal ">
+
+          <!-- NETELLER  Withdrawal-->
+          <div class="cashier-payment-details hidden js-neteller-winthdrawal-show-container aboslute inner-control full-width">
+            <form class="cashier-payment-form" method="POST">
+              <div class="form-controller">
+                <label class="form-text">NETELLER Account ID::</label>
+                <input class="form-input" id="js-deposite-skrill-email" type="email" name="depositeSkrillEmail"> *
+                <!-- validation js -->
+                <p class="text-validation hidden js-text-email-valiation"> Email can't be blank! </p> 
+                <img class="icon-validation hidden js-icon-email-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+
+              </div>
+
+              <div class="form-controller">
+                <label class="form-text">Withdraw Amount</label>
+
+                <input class="form-input" id="js-deposite-skrill-amount" type="text" name="depositeSkrillAmount"> *
+                <p class="text-validation hidden js-text-amount-valiation"> Amount can't be blank!</p> 
+                <img class="icon-validation hidden js-icon-amount-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+              </div>
+              <div class="form-controller">
+                <input class="form-btn-submit" id="js-deposite-skrill-submit" type="submit" value=" " name="depositeSkrillSubmit">
+              </div>
+            </form>
+            <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
+            <div class="cashier-payment-contact-wrapper">
+              <div class="cashier-payment-item">
+                <a class="cashier-payment-contact-logo" href="#">
+                  <img src="app/assets/images/contact-logos/live-chat-btn-en.png">
+                </a>
+              </div>
+              <div class="cashier-payment-item">
+                <span> OR </span>
+              </div>
+              <div class="cashier-payment-item">
+                <img class="logo-email" src="app/assets/images/contact-logos/cs-mail-icons.png">
+              </div>
+              <div class="cashier-payment-item">
+                <a class="cashier-payment-contact-logo" href="mailto: CS@ClubVegas999.com">
+                  <span> CS@ClubVegas999.com </span>
+                </a>  
+              </div>   
+            </div>
+          </div>
+          <!-- NETELLER Withdrawal -->
+
+        </div>
+        <!-- out neteller withdrawal -->
+
+
       </div>
     </div>
   </body>
