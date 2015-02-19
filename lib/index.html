@@ -259,7 +259,7 @@
                 </div>
                 <div class="form-controller">
                   <label class="form-text">Withdraw Amount:</label>
-                  <input class="form-input" id="js-neteller-withdrawal-amount-validation" type="number" name="depositeNetellerAmount"> *
+                  <input class="form-input" id="js-neteller-withdrawal-amount-validation" type="text" name="depositeNetellerAmount"> *
                   
                   <!-- validation js -->
                   <p class="text-validation hidden js-text-withdrawal-amount-validation"> Please insert a valid amount! </p> 
@@ -316,22 +316,19 @@
             <form class="cashier-payment-form" method="POST">
               <div class="form-controller">
                 <label class="form-text">Skrill(MoneyBooker) Email:</label>
-                <input class="form-input" id="js-deposite-skrill-email" type="email" name="depositeSkrillEmail"> *
-                <!-- validation js -->
-                <p class="text-validation hidden js-text-email-validation"> Email can't be blank! </p> 
-                <img class="icon-validation hidden js-icon-email-validation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
-
+                <input class="form-input" id="js-skrill-withdrawal-email" type="email" name="depositeSkrillEmail"> * 
+                <p class="text-validation hidden js-text-skrill-withdrawal-email-validation"> Email Address is required!</p> 
+                <img class="icon-validation hidden js-icon-skrill-withdrawal-email-validation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
               </div>
 
               <div class="form-controller">
-                <label class="form-text">Deposit Amount:</label>
-
-                <input class="form-input" id="js-deposite-skrill-amount" type="text" name="depositeSkrillAmount"> *
-                <p class="text-validation hidden js-text-amount-validation"> Amount can't be blank!</p> 
-                <img class="icon-validation hidden js-icon-amount-validation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+                <label class="form-text">Withdraw Amount:</label>
+                <input class="form-input" id="js-skrill-withdrawal-amount" type="text" name="depositeSkrillAmount"> *
+                <p class="text-validation hidden js-text-skrill-withdrawal-amount-validation">Withdraw Amount is required!</p> 
+                <img class="icon-validation hidden js-icon-skrill-withdrawal-amount-validation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
               </div>
               <div class="form-controller">
-                <input class="form-btn-submit" id="js-deposite-skrill-submit" type="submit" value=" " name="depositeSkrillSubmit">
+                <input class="form-btn-submit" id="js-skrill-withdrawal-submit" type="submit" value=" " name="depositeSkrillSubmit">
               </div>
             </form>
             <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
