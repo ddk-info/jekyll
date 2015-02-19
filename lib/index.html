@@ -132,7 +132,7 @@
           <form class="cashier-payment-form">
             <div class="form-controller">
               <label class="form-text">Account ID:</label>
-              <input class="form-input" id="js-neteller-account-id-validation" maxlength="14" type="text" name="depositeNetelleraAccountId"> *
+              <input class="form-input" id="js-neteller-account-id-validation" maxlength="12" type="text" name="depositeNetelleraAccountId"> *
 
               <!-- validation js -->
               <p class="text-validation hidden js-text-acount-id-valiation"> Account ID is required!</p> 
@@ -250,47 +250,33 @@
               <div class="column-5 grid">
                 <div class="form-controller">
                   <label class="form-text">Bank Account Number:</label>
-                  <input class="form-input" id="js-neteller-account-id-validation" max-length= "14" type="text" name="depositeNetelleraAccountId"> 
-
-                  <!-- validation js -->
-                  <p class="text-validation hidden js-text-acount-id-valiation"> Account ID can't be blank! </p> 
-                  <img class="icon-validation hidden js-icon-acount-id-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+                  <input class="form-input" max-length= "14" type="text" name="depositeNetelleraAccountId"> 
                 </div>
                 <div class="form-controller">
                   <label class="form-text">Bank Account Name:</label>
-                  <input class="form-input" id="js-neteller-secure-id-validation" type="email" name="depositeNetellerSecureId"> 
+                  <input class="form-input" type="email" name="depositeNetellerSecureId"> 
 
-                  <!-- validation js -->
-                  <p class="text-validation hidden js-text-secure-id-valiation"> Secure ID can't be blank! </p> 
-                  <img class="icon-validation hidden js-icon-secure-id-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
                 </div>
                 <div class="form-controller">
                   <label class="form-text">Withdraw Amount:</label>
-                  <input class="form-input" id="js-neteller-deposite-amount-validation" type="number" name="depositeNetellerAmount"> *
+                  <input class="form-input" id="js-neteller-withdrawal-amount-validation" type="number" name="depositeNetellerAmount"> *
                   
                   <!-- validation js -->
-                  <p class="text-validation hidden js-text-email-valiation"> Deposite amount can't be blank! </p> 
-                  <img class="icon-validation hidden js-icon-email-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
+                  <p class="text-validation hidden js-text-withdrawal-amount-valiation"> Please insert a valid amount! </p> 
+                  <img class="icon-validation hidden js-icon-withdrawal-amount-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
                 </div>
                 <div class="form-controller">
-                  <input class="form-btn-submit" id="js-neteller-submit-button" type="submit" value=" " name="depositeNetellerSubmit">
+                  <input class="form-btn-submit" id="js-neteller-withdrawal-submit-button" type="submit" value=" " name="depositeNetellerSubmit">
                 </div>
               </div>
               <div class="column-5 grid">
                 <div class="form-controller">
                   <label class="form-text">Bank Name:</label>
                   <input class="form-input" id="js-neteller-account-id-validation" max-length= "14" type="text" name="depositeNetelleraAccountId"> 
-                  <!-- validation js -->
-                  <p class="text-validation hidden js-text-acount-id-valiation"> Account ID can't be blank! </p> 
-                  <img class="icon-validation hidden js-icon-acount-id-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
                 </div>
                 <div class="form-controller">
                   <label class="form-text">Bank Branch:</label>
                   <input class="form-input" id="js-neteller-secure-id-validation" type="email" name="depositeNetellerSecureId"> 
-
-                  <!-- validation js -->
-                  <p class="text-validation hidden js-text-secure-id-valiation"> Secure ID can't be blank! </p> 
-                  <img class="icon-validation hidden js-icon-secure-id-valiation" title="Email address is invalid!"src="app/assets/images/form/warning.png">
                 </div>
               </div>
               <div class="clear-fix"></div>
