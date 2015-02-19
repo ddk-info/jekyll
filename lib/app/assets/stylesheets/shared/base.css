@@ -13,3 +13,14 @@
   margin-bottom: 65px;
 }
 
+
+/* Remove Default outline */
+* {
+  outline: none !important;
+}
+
+/*firefox reamove default outline*/
+*::-moz-focus-inner {
+  border: 0 !important; 
+  outline: none !important;
+}
