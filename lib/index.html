@@ -246,37 +246,37 @@
           
           <!-- Bank Widthdrawal -->
           <div class="cashier-payment-details hidden js-bank-withdrawal-show-container aboslute inner-control full-width">
-            <form class="cashier-payment-form">
+            <form class="js-cashier-payment-form-bank-withdrawal">
               <div class="column-5 grid">
-                <div class="form-controller">
+                <div class="form-controller js-validate">
                   <label class="form-text">Bank Account Number:</label>
-                  <input class="form-input" max-length= "14" type="text" name="depositeNetelleraAccountId"> 
+                  <input class="form-input" type="text" name="depositeNetelleraAccountId"> 
                 </div>
-                <div class="form-controller">
-                  <label class="form-text">Bank Account Name:</label>
-                  <input class="form-input" type="email" name="depositeNetellerSecureId"> 
 
+                <div class="form-controller js-validate">
+                  <label class="form-text">Bank Account Name:</label>
+                  <input class="form-input" type="text" name="depositeNetellerSecureId"> 
                 </div>
-                <div class="form-controller">
+
+                <div class="form-controller js-validate">
                   <label class="form-text">Withdraw Amount:</label>
-                  <input class="form-input" id="js-neteller-withdrawal-amount-validation" type="text" name="depositeNetellerAmount"> *
-                  
+                  <input class="form-input" id="js-bank-withdrawal-amount-validation" type="text" name="depositeNetellerAmount"> *
                   <!-- validation js -->
                   <p class="text-validation hidden js-text-withdrawal-amount-validation"> Please insert a valid amount! </p> 
                   <img class="icon-validation hidden js-icon-withdrawal-amount-validation" src="app/assets/images/form/warning.png">
                 </div>
                 <div class="form-controller">
-                  <input class="form-btn-submit" id="js-neteller-withdrawal-submit-button" type="submit" value=" " name="depositeNetellerSubmit">
+                  <input class="form-btn-submit" id="js-bank-withdrawal-submit-button" type="button" value=" " name="depositeNetellerSubmit">
                 </div>
               </div>
               <div class="column-5 grid">
                 <div class="form-controller">
                   <label class="form-text">Bank Name:</label>
-                  <input class="form-input" id="js-neteller-account-id-validation" max-length= "14" type="text" name="depositeNetelleraAccountId"> 
+                  <input class="form-input" type="text" name="depositeNetelleraAccountId"> 
                 </div>
                 <div class="form-controller">
                   <label class="form-text">Bank Branch:</label>
-                  <input class="form-input" id="js-neteller-secure-id-validation" type="email" name="depositeNetellerSecureId"> 
+                  <input class="form-input" type="text" name="depositeNetellerSecureId"> 
                 </div>
               </div>
               <div class="clear-fix"></div>
