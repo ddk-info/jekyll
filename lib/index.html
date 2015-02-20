@@ -129,8 +129,8 @@
 
         <!-- NETELLER -->
         <div class="cashier-payment-details hidden js-toogle-neteller-show aboslute">
-          <form class="cashier-payment-form">
-            <div class="form-controller">
+          <form class="cashier-payment-form-neteller">
+            <div class="form-controller div-validate">
               <label class="form-text">Account ID:</label>
               <input class="form-input" id="js-deposite-neteller-account-id-validation" maxlength="12" type="text" name="depositeNetelleraAccountId"> *
 
@@ -138,7 +138,7 @@
               <p class="text-validation hidden js-text-acount-id-validation"> Account ID is required!</p> 
               <img class="icon-validation hidden js-icon-acount-id-validation"  src="app/assets/images/form/warning.png">
             </div>
-            <div class="form-controller">
+            <div class="form-controller div-validate">
               <label class="form-text">Secure ID:</label>
               <input class="form-input" id="js-deposite-neteller-secure-id-validation" maxlength="6" type="text" name="depositeNetellerSecureId"> *
 
@@ -153,7 +153,7 @@
                 <option value="EUR">EUR</option>
               </select>
             </div>
-            <div class="form-controller">
+            <div class="form-controller div-validate">
               <label class="form-text">Deposit Amount:</label>
               <input class="form-input" id="js-deposite-neteller-deposite-amount-validation" type="text" name="depositeNetellerAmount"> *
               
@@ -162,7 +162,7 @@
               <img class="icon-validation hidden js-icon-deposite-amount-validation" src="app/assets/images/form/warning.png">
             </div>
             <div class="form-controller">
-              <input class="form-btn-submit" id="js-deposite-neteller-submit-button" type="submit" value=" " name="depositeNetellerSubmit">
+              <input class="form-btn-submit" id="js-deposite-neteller-submit-button" type="button" value=" " name="depositeNetellerSubmit">
             </div>
           </form>
           <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
