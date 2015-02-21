@@ -329,25 +329,25 @@
 
           <!-- NETELLER  Withdrawal-->
           <div class="cashier-payment-details hidden js-neteller-winthdrawal-show-container aboslute inner-control full-width">
-            <form class="cashier-payment-form" method="POST">
-              <div class="form-controller">
+            <form class="js-cashier-payment-form-withdrawal-neteller" method="POST">
+              <div class="form-controller js-validate">
                 <label class="form-text">NETELLER Account ID::</label>
-                <input class="form-input" id="js-withdrawal-neteller" type="text" maxlength="12" name="depositeSkrillEmail"> *
+                <input class="form-input" id="js-withdrawal-neteller-account-id" type="text" maxlength="12" name="withdrawalNetellerAcountId"> *
                 <!-- validation js -->
                 <p class="text-validation hidden js-text-withdrawal-neteller-validation"> NETELLER Account ID is required!</p> 
                 <img class="icon-validation hidden js-icon-withdrawal-neteller-validation"src="app/assets/images/form/warning.png">
 
               </div>
 
-              <div class="form-controller">
+              <div class="form-controller js-validate">
                 <label class="form-text">Withdraw Amount</label>
 
-                <input class="form-input" id="js-withdrawal-neteller-amount" type="text" name="depositeSkrillAmount"> *
+                <input class="form-input" id="js-withdrawal-neteller-amount-id" type="text" name="withdrawalNetellerAmount"> *
                 <p class="text-validation hidden js-text-withdrawal-neteller-amount-validation"> Please insert a valid amount!</p> 
                 <img class="icon-validation hidden js-icon-withdrawal-neteller-amount-validation" src="app/assets/images/form/warning.png">
               </div>
               <div class="form-controller">
-                <input class="form-btn-submit" id="js-withdrawal-neteller-submit" type="submit" value=" " name="depositeSkrillSubmit">
+                <input class="form-btn-submit" id="js-withdrawal-neteller-submit-button" type="button" value=" " name="withdrawalNetellerSubmit">
               </div>
             </form>
             <p class="cashier-payment-contact-msg">For Cash Deposit to One of our banks Please Contact Player Support via</p>
